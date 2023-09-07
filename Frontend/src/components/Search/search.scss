@@ -1,0 +1,77 @@
+.wrapper {
+    & * {
+        box-sizing: border-box;
+    }
+    .form {
+        height: 30px;
+        font-size: 14px;
+        width: 300px;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 15px;
+        background-color: #ffffff;
+        display: flex;
+        input {
+            flex: 1;
+            height: 100%;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            border-radius: 15px;
+            background-color: initial;
+            padding: 0 10px;
+            // margin-top: 1px;
+            // border: 1px solid rgb(0, 0, 0);
+            // margin-right: 0px;
+            // border-radius: 15px 0 0 15px;
+            // height: 100%;
+            // transition: all 0.2 ease;
+            // border-right: 1px solid rgba(0, 0, 0, 0);
+            // min-width: 250px;
+            // outline: none;
+            // &:focus {
+            //     outline: rgba(0, 0, 0, 0.3);
+            // }
+            // @media (max-width: 1201px) {
+            //     min-width: 250px;
+            // }
+        }
+        .search {
+            position: relative;
+            border: none;
+            height: 100%;
+            outline: none;
+            overflow: hidden;
+            background-color: initial;
+            padding: 0 12px;
+            border-radius: 0 15px 15px 0;
+            // display: inline-block;
+            // border: 1px solid #1e272e;
+            // border-radius: 0 15px 15px 0;
+            // height: 100%;
+            // background-color: #ffffff;
+            // color: #090909;
+            // border-left: 1px solid rgba(0, 0, 0, 0);
+            // outline: none;
+        }
+        .search:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            height: 80%;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &:hover,
+        &:focus {
+            .search {
+                background-color: rgba(230, 227, 221, 0.5);
+                // border: 1px solid rgba(30, 39, 46, 0.7);
+                // outline: rgba(30, 39, 46, 0.7);
+            }
+        }
+    }
+}

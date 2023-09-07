@@ -1,0 +1,65 @@
+.Home_wrapper {
+    & > .Slider_wrapper {
+        padding: 70px 170px 70px 170px;
+        @media (max-width: 1200px) {
+            padding: 70px 60px 70px 60px;
+        }
+        @media (max-width: 576px) {
+            padding: 70px 10px 70px 10px;
+        }
+        & > .Slider_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 10px;
+
+            & > .Slider_title_main {
+                align-items: center;
+                font-weight: 600;
+                font-size: 44px;
+                @media (max-width: 992px) {
+                    font-size: 30px;
+                }
+                @media (max-width: 576px) {
+                    font-size: 24px;
+                }
+            }
+            & > .Slider_title_to {
+                & > span {
+                    height: 100%;
+                    width: auto;
+                    font-size: 20px;
+                    border: 2px solid black;
+                    cursor: pointer;
+                    padding: 5px 10px;
+                    &:hover {
+                        background-color: var(--main);
+                        border: 1px solid inherit;
+                    }
+                    @media (max-width: 992px) {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 576px) {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    & > .Book_slick_wrapper {
+        padding: 0 100px 70px 100px;
+        @media (max-width: 1200px) {
+            padding: 0 60px 70px 60px;
+        }
+        @media (max-width: 768px) {
+            padding: 0 10px 70px 10px;
+        }
+        @media (max-width: 576px) {
+            padding: 0 10px 70px 10px;
+        }
+        .Book_slick_title {
+            margin-bottom: 20px;
+        }
+    }
+}

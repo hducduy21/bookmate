@@ -1,0 +1,51 @@
+.BookCard_wrapper_outer {
+    height: auto;
+    padding: 0 25px;
+    .BookCard_wrapper_inner {
+        cursor: pointer;
+        .BookCard_img {
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            margin-bottom: 10px;
+            img {
+                transition: all 0.2 ease;
+                height: 100%;
+            }
+        }
+        .BookCard_title {
+            transition: all 0.2 ease;
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid rgb(217, 217, 217);
+        }
+        .BookCard_infor {
+            display: flex;
+            justify-content: space-between;
+            .Infor_title {
+                font-size: 11px;
+            }
+            .Infor_content {
+                font-size: 14px;
+            }
+            .text-right {
+                text-align: right;
+            }
+        }
+    }
+    &:hover {
+        .BookCard_wrapper_inner {
+            .BookCard_img {
+                img {
+                    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.4);
+                }
+            }
+            .BookCard_title {
+                font-weight: 700;
+            }
+        }
+    }
+}
+.toWidth {
+    width: 255px;
+}

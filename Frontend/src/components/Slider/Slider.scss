@@ -1,0 +1,43 @@
+.handleControl_carousel {
+    height: 28px;
+    display: flex;
+    margin-top: 10px;
+    .handleControl_carousel_to {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        .carousel_slide {
+            background-color: black;
+            width: 15px;
+            height: 3px;
+            cursor: pointer;
+        }
+        .carousel_slide--active {
+            width: 30px;
+        }
+        .carousel_slide + .carousel_slide {
+            margin-left: 10px;
+        }
+    }
+    .handleControl_carousel_next_prev {
+        display: flex;
+        .carousel_prev + .carousel_next {
+            margin-left: 10px;
+        }
+        & > * {
+            height: 28px;
+            width: 28px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.2 ease;
+            cursor: pointer;
+            font-size: 14px;
+            &:hover {
+                font-size: 18px;
+            }
+        }
+    }
+}

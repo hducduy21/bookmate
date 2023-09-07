@@ -1,0 +1,40 @@
+.AuthorCard_wrapper_outer {
+    height: auto;
+    padding: 0 25px;
+    .AuthorCard_wrapper_inner {
+        cursor: pointer;
+        .AuthorCard_img {
+            display: flex;
+            justify-content: center;
+            height: 200px;
+            margin-bottom: 10px;
+            img {
+                height: 100%;
+            }
+        }
+        .AuthorCard_title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 600;
+            border-bottom: 1px solid rgb(217, 217, 217);
+        }
+        .AuthorCard_infor {
+            .Infor_title {
+                font-size: 11px;
+            }
+            .Infor_content {
+                font-size: 14px;
+            }
+        }
+    }
+    &:hover {
+        .AuthorCard_wrapper_inner {
+            .AuthorCard_title {
+                font-weight: 700;
+            }
+        }
+    }
+}
+.toWidth {
+    width: 255px;
+}
